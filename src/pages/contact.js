@@ -50,7 +50,23 @@ export default function Contact() {
 
   return (
     <div className={styles.contactPage}>
-      <h1 className={styles.heading}>Skontaktuj się z nami</h1>
+      <div className={styles.contactInfo}>
+        <h1 className={styles.heading}>Skontaktuj się z nami</h1>
+        <div className={styles.info}>
+          <p>PROMARKET-SERWIS Hubert Ziółko</p>
+          <p>ul. Stawowa 6</p>
+          <p>46-060 Górki</p>
+          <p>woj. opolskie</p>
+          <p>NIP: 754-101-03-44</p>
+          <p>tel: 603 636 169</p>
+          <p>
+            Email:{" "}
+            <a href="mailto:hubert@ziolko.pl" className={styles.emailLink}>
+              hubert@ziolko.pl
+            </a>
+          </p>
+        </div>
+      </div>
       <form className={styles.form} onSubmit={handleSubmit}>
         <FormLabel htmlFor="name">Imię:</FormLabel>
         <FormInput

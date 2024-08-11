@@ -10,6 +10,26 @@
   overflow-x: hidden;
 }
 
+.contactInfo {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.info {
+  margin-top: 10px;
+}
+
+.emailLink {
+  color: #f9a826;
+  text-decoration: none;
+}
+
+.emailLink:hover {
+  text-decoration: underline;
+}
+
 .heading {
   font-size: 2.5rem;
   margin-bottom: 2rem;
@@ -21,6 +41,8 @@
   flex-direction: column;
   width: 100%;
   max-width: 500px;
+  margin: 0 auto;
+  padding-right: 20px;
 }
 
 .label {
@@ -87,4 +109,58 @@
 
 .backButton:hover {
   background-color: #d18b1f;
+}
+
+@media (max-width: 600px) {
+  .contactPage {
+    flex-direction: column;
+  }
+
+  .contactInfo {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    width: 100%;
+    margin: 20px auto;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .contactPage {
+    flex-direction: column;
+  }
+
+  .contactInfo {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    width: 100%;
+    margin: 20px auto;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .contactPage {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .contactInfo {
+    flex: 1;
+    max-width: 400px;
+    margin-right: 20px;
+  }
+
+  .form {
+    flex: 2;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-top: 40px;
+  }
 }
