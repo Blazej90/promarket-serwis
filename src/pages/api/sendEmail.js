@@ -4,12 +4,10 @@ export default async function sendEmail(req, res) {
   if (req.method === "POST") {
     const { name, email, message } = req.body;
 
-    // Weryfikacja danych
     if (!name || !email || !message) {
       return res.status(400).json({ message: "Wszystkie pola są wymagane" });
     }
 
-    // Konfiguracja transportera
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -27,7 +25,9 @@ export default async function sendEmail(req, res) {
 
     try {
       await transporter.sendMail(mailOptions);
-      return res.status(200).json({ message: "Wiadomość wysłana pomyślnie" });
+      return res
+        .status(200)
+        .json({ message: "Wiadomość wysłana pomyślnie, dziękujemy" });
     } catch (error) {
       console.error("Błąd podczas wysyłania wiadomości:", error);
       return res
