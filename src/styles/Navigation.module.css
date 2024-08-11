@@ -1,0 +1,44 @@
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navLink {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #f9a826;
+}
+
+/* Stylizacja dla smartfonów */
+@media (max-width: 600px) {
+  .navLink {
+    font-size: 1rem;
+  }
+}
+
+/* Stylizacja dla tabletów */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navLink {
+    font-size: 1.1rem;
+  }
+}
+
+/* Stylizacja dla laptopów */
+@media (min-width: 1025px) {
+  .navLink {
+    font-size: 1.2rem;
+  }
+}
