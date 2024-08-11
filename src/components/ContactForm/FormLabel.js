@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import styles from "../../styles/Contact.module.css";
 
 export default function FormLabel({ htmlFor, children }) {
@@ -8,3 +8,8 @@ export default function FormLabel({ htmlFor, children }) {
     </label>
   );
 }
+
+FormLabel.propTypes = {
+  htmlFor: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};

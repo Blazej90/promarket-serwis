@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import styles from "../../styles/Contact.module.css";
 
 export default function FormInput({ type, id, value, onChange }) {
@@ -12,3 +12,10 @@ export default function FormInput({ type, id, value, onChange }) {
     />
   );
 }
+
+FormInput.propTypes = {
+  type: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+};

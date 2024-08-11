@@ -1,4 +1,3 @@
-import React from "react";
 import Navigation from "../components/Navigation";
 import styles from "../styles/HomePage.module.css";
 
@@ -9,7 +8,9 @@ export default function HomePage() {
         <Navigation />
       </header>
       <main className={styles.mainContent}>
-        <h1 className={styles.heading}>Witamy na stronie "PROMARKET-SERWIS"</h1>
+        <h1 className={styles.heading}>
+          Witamy na stronie &quot;PROMARKET-SERWIS&quot;
+        </h1>
         <p className={styles.paragraph}>
           Oferujemy profesjonalne usługi związane z serwisem wag elektronicznych
           i mechanicznych

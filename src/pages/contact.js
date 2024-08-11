@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import FormLabel from "../components/ContactForm/FormLabel";
 import FormInput from "../components/ContactForm/FormInput";
 import FormTextarea from "../components/ContactForm/FormTextarea";

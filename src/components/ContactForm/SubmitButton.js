@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import styles from "../../styles/Contact.module.css";
 
 export default function SubmitButton({ children, onClick }) {
@@ -8,3 +8,8 @@ export default function SubmitButton({ children, onClick }) {
     </button>
   );
 }
+
+SubmitButton.propTypes = {
+  children: PropTypes.node.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
