@@ -25,9 +25,7 @@ export default async function sendEmail(req, res) {
 
     try {
       await transporter.sendMail(mailOptions);
-      return res
-        .status(200)
-        .json({ message: "Wiadomość wysłana pomyślnie, dziękujemy" });
+      return res.status(200).json({ message: "Wiadomość wysłana pomyślnie" });
     } catch (error) {
       console.error("Błąd podczas wysyłania wiadomości:", error);
       return res
