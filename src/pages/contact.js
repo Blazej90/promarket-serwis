@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import FormLabel from "../components/ContactForm/FormLabel";
 import FormInput from "../components/ContactForm/FormInput";
@@ -75,6 +76,10 @@ export default function Contact() {
         />
 
         <SubmitButton>Wyślij</SubmitButton>
+
+        <Link href="/" className={styles.backButton}>
+          Powrót do strony głównej
+        </Link>
       </form>
       {error && <p className={styles.error}>{error}</p>}
       {success && <p className={styles.success}>{success}</p>}

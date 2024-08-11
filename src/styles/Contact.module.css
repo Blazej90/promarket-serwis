@@ -69,3 +69,22 @@
   color: green;
   margin-top: 10px;
 }
+
+.backButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f9a826;
+  color: #1a1a2e;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.backButton:hover {
+  background-color: #d18b1f;
+}
