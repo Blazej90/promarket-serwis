@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import styles from "../../styles/Contact.module.css";
 
-export default function SubmitButton({ children, onClick }) {
+export default function SubmitButton({ children, onClick = undefined }) {
   return (
     <button type="submit" className={styles.button} onClick={onClick}>
       {children}
@@ -11,5 +11,5 @@ export default function SubmitButton({ children, onClick }) {
 
 SubmitButton.propTypes = {
   children: PropTypes.node.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
 };
