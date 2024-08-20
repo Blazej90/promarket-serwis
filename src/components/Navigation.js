@@ -10,6 +10,11 @@ export default function Navigation() {
           </a>
         </li>
         <li className={styles.navItem}>
+          <a href="/legalization" className={styles.navLink}>
+            Legalizacja wag
+          </a>
+        </li>
+        <li className={styles.navItem}>
           <a href="/services" className={styles.navLink}>
             Usługi
           </a>
